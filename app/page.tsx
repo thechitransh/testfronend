@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export default function Home() {
   useEffect(() => {
     fetch("https://test-aqi9.onrender.com/set-cookie", {
-      credentials: "include"
+      credentials: "same-origin"
     });
   }, []);
   return (
